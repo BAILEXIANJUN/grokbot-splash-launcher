@@ -1,93 +1,84 @@
-# Grok Bot 启动动画（Grok娘 Splash）
+# Grok娘 · Grok Bot 启动动画
 
-启动 Grok Bot 时，先全屏播放一段 Grok娘 开场动画，播完后自动以**最大化**窗口打开真正的 Grok Bot。
+给 Windows 上的 Grok Bot 加一段 23.8 秒的有声开场：Grok娘登场，说出「哼，才不是特意等你的呢。」和「快点，有活干了。」；结尾画面逐渐变暗，再进入最大化的 Grok Bot。
 
-![Grok娘](screenshots/hero_06s_eyes_open.png)
+## 两个主要画面
 
-![Grok Bot 标题画面](screenshots/hero_15s.png)
+**Grok娘登场 · 约 6 秒**
 
-## 🎬 预览
+![Grok娘角色画面，约 6 秒](screenshots/hero_06s_eyes_open.png)
 
-[![点击观看预览视频](media/preview.gif)](media/preview.mp4)
+**Grok Bot 标题 · 约 15 秒**
 
-▶️ [观看完整预览视频（16:9，23.8 秒，带声音）](media/preview.mp4) · [Release 下载](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/grokbot-splash-preview.mp4)
+![Grok Bot 标题画面，约 15 秒](screenshots/hero_15s.png)
 
-## 📥 下载
+## 完整动画 · 在线播放
 
-[![下载便携包](https://img.shields.io/badge/下载-便携包%20v1.0.0-blue?style=for-the-badge)](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/GrokBotSplash-v1.0.0-portable.zip)
-[![预览视频](https://img.shields.io/badge/预览-MP4-orange?style=for-the-badge)](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/grokbot-splash-preview.mp4)
-[![SHA256](https://img.shields.io/badge/校验-SHA256SUMS-green?style=for-the-badge)](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/SHA256SUMS.txt)
-[![全部版本](https://img.shields.io/badge/Releases-全部版本-lightgrey?style=for-the-badge)](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases)
+**v1.0.0 · 23.8 秒完整有声预览**。点击下方播放器观看，两句台词和原音轨均保留。网页采用 1280×720、16:9 的轻量副本，约 4.3 MB。
 
-## ✨ 特点
+https://github.com/user-attachments/assets/440fc630-2394-4625-8131-7835ccb42194
 
-- 时长 23.8 秒。实际部署的 `splash.mp4` 为 **16:10** 版：主画面保持 16:9 居中，上下用放大模糊的同一画面填充，16:10 屏幕上没有黑边（16:9 屏幕同样正常显示）。
-- 两句台词：
-  - 6.8s：「哼，才不是特意等你的呢。」
-  - 14.6s：「快点，有活干了。」
-- 结尾定格在 15.3s 的画面，亮度渐暗到约 30%，**不会全黑**；结束前约 1.5 秒预先启动 Grok Bot，随后最大化弹出，衔接自然。
-- Esc / 空格 / 回车 / 鼠标点击随时跳过；40 秒保险超时，不会卡住。
+[备用 MP4 文件](https://raw.githubusercontent.com/BAILEXIANJUN/grokbot-splash-launcher/main/media/preview-web.mp4) · [下载原始 1080p 有声预览](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/grokbot-splash-preview.mp4)
 
-## 🚀 安装与使用
+<details>
+<summary>查看自动循环的静音动图</summary>
 
-1. 下载 [`GrokBotSplash-v1.0.0-portable.zip`](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/GrokBotSplash-v1.0.0-portable.zip)，（可选）对照 `SHA256SUMS.txt` 校验。
-2. 解压到任意目录，例如 `D:\GrokBotSplash` 或 `%LOCALAPPDATA%\GrokBotSplash`。
-3. 右键 `scripts\Install-Shortcut.ps1` →「使用 PowerShell 运行」，桌面会出现 **「Grok Bot（启动动画）」** 快捷方式。
-4. 以后双击这个快捷方式启动 Grok Bot 即可。也可以直接双击 `launch.vbs`。
-5. 不想要了：运行 `scripts\Restore-Shortcut.ps1` 删除该快捷方式，再删除文件夹。原版 Grok Bot 快捷方式始终不会被改动。
+![Grok娘启动动画的静音循环预览](media/preview.gif)
 
-> 默认 Grok Bot 路径为 `%LOCALAPPDATA%\Programs\Grok Bot\Grok Bot.exe`。装在别处时，设置环境变量 `GROKBOT_EXE` 指向实际的 exe。
+</details>
 
-## 📦 获取方式
+**[下载与安装](docs/DOWNLOADS.md) · [Agent 使用说明](AGENTS.md) · [预览维护说明](docs/PREVIEW.md) · [更新记录](CHANGELOG.md)**
 
-**方式一：直接下载**
+**[下载 Windows 便携包](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/GrokBotSplash-v1.0.0-portable.zip) · [下载仓库源码](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/archive/refs/heads/main.zip) · [原始有声预览 MP4](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/grokbot-splash-preview.mp4) · [SHA256 校验](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/SHA256SUMS.txt)**
 
-从 [Releases](https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases) 下载便携包，按上面的步骤安装。
+## 下载后怎么用
 
-**方式二：让 AI 助手帮你装**
+需要 Windows、PowerShell 5.1+、可用的 WPF 与系统媒体组件，以及已安装、能独立正常打开的 **Grok Bot 桌面应用**。便携包不包含 Grok Bot 安装程序。
 
-把下面这段话发给能操作你电脑的 AI 助手（比如 Grok Bot）：
+1. 下载 `GrokBotSplash-v1.0.0-portable.zip`，对照同一 Release 的 `SHA256SUMS.txt` 校验后，解压到准备长期保留的目录，例如 `D:\GrokBotSplash`。
+2. 双击解压目录根部的 `launch.vbs`，播放动画并进入 Grok Bot。
+3. 需要桌面入口时，在**解压后的便携目录**中右键 `scripts\Install-Shortcut.ps1`，选择「使用 PowerShell 运行」，创建 **Grok Bot（启动动画）** 快捷方式。
+4. 卸载时，运行同一目录的 `scripts\Restore-Shortcut.ps1` 删除这个快捷方式，再删除便携目录。
 
-```text
-请帮我安装 Grok Bot 启动动画：
-1. 阅读 https://github.com/BAILEXIANJUN/grokbot-splash-launcher 的 README.md 和 AGENTS.md。
-2. 从 v1.0.0 Release 下载 GrokBotSplash-v1.0.0-portable.zip 和 SHA256SUMS.txt，校验 SHA256。
-3. 解压到 %LOCALAPPDATA%\GrokBotSplash。
-4. 运行 scripts\Install-Shortcut.ps1，在桌面创建「Grok Bot（启动动画）」快捷方式，不要改动原有快捷方式。
-5. 安装完先告诉我，不要自动运行。
+默认应用路径为 `%LOCALAPPDATA%\Programs\Grok Bot\Grok Bot.exe`；其他安装位置可通过环境变量 `GROKBOT_EXE` 指定。原有 Grok Bot 快捷方式不需要改动。详细下载、校验与路径说明见 [下载与安装](docs/DOWNLOADS.md)。
+
+## 播放与启动行为
+
+- 便携包使用 **2560×1600、16:10、30fps** 的 `splash.mp4`：16:9 主画面居中，上下使用同画面模糊填充；播放器等比例显示。网页的 16:9 预览与安装用视频分开维护。
+- 约 6.8 秒与 14.6 秒出现两句台词；结尾定格在约 15.3 秒的画面，逐渐变暗至约 30% 亮度，保留可见画面。
+- 播放期间按 **Esc / 空格 / 回车** 或单击鼠标可跳过；播放器设有 40 秒保险超时。
+- 正常播放时，启动器在结束前约 1.5 秒预先启动 Grok Bot；关闭动画后等待真实应用窗口，将其置于前台并最大化。
+
+这是通过快捷方式触发的应用启动器。日志保存在便携目录的 `launcher.log`。
+
+## Codex / 其他 agent 下载
+
+下载信息与便携包 SHA256 见 [distribution.json](distribution.json)，操作规范见 [AGENTS.md](AGENTS.md)。在下载或克隆的仓库源码目录中运行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Download.ps1 `
+  -Version v1.0.0 -Destination .\GrokBotDownload
 ```
 
-AI 助手的详细操作规范见 [AGENTS.md](AGENTS.md)，下载信息见 [distribution.json](distribution.json)。
+脚本下载、校验并解压便携包，不自动运行程序或创建快捷方式。请明确要求 agent 安装到指定位置、保留原有快捷方式，并在运行有声全屏动画前取得你的同意。
 
-## 🗂️ 目录结构
+## 源码与素材
 
 ```text
-src/launcher.ps1              WPF 全屏播放器 + 启动并最大化 Grok Bot
-src/launch.vbs                无窗口启动 launcher.ps1
-scripts/Install-Shortcut.ps1  创建桌面快捷方式
-scripts/Restore-Shortcut.ps1  删除该快捷方式
-scripts/Download.ps1          下载并校验便携包
-media/preview.mp4             16:9 预览视频
+src/launcher.ps1              WPF 播放器、Grok Bot 启动与窗口最大化
+src/launch.vbs                隐藏 PowerShell 窗口的入口
+scripts/Download.ps1          下载、校验和解压便携包
+scripts/Install-Shortcut.ps1  创建独立桌面快捷方式
+scripts/Restore-Shortcut.ps1  删除本项目桌面快捷方式
+media/preview.mp4             原始 1080p 网页预览
+media/preview-web.mp4         720p 网页播放副本
+media/preview.gif             静音循环动图
 ```
 
-便携包内的 `launcher.ps1`、`launch.vbs`、`splash.mp4` 位于根目录。
+仓库源码 ZIP 是当前 `main` 分支的快照，与便携包用途不同；其中不含安装用的 16:10 `splash.mp4`。便携包将 `launcher.ps1`、`launch.vbs`、`splash.mp4` 放在根目录，可以直接使用。
 
-## 🛠️ 技术栈
+启动器使用 PowerShell、WPF、VBScript 和 Win32 窗口 API。视频制作使用 FFmpeg；语音由 GPT-SoVITS 零样本克隆生成。网页预览的编码、上传与维护方式见 [预览维护说明](docs/PREVIEW.md)。
 
-- **ffmpeg**：剪辑、淡入淡出、模糊填充、混音
-- **GPT-SoVITS**：语音零样本克隆（v2ProPlus 预训练模型，未额外训练，参考音频约 3.5 秒）
-- **PowerShell + WPF**：MediaElement 全屏播放（Stretch=Uniform，无边框、置顶）
-- **VBScript**：隐藏窗口启动
-- **Win32 user32 API**：`ShowWindow(SW_MAXIMIZE)` 最大化并置前台
+## 署名与许可
 
-## ⚠️ 注意事项
-
-- 仅支持 Windows，需要系统自带的 PowerShell 5.1+。
-- 首次运行若被执行策略拦截，`launch.vbs` 已使用 `-ExecutionPolicy Bypass`，仅作用于本次进程。
-- 运行日志写在安装目录下的 `launcher.log`。
-- **版权说明**：MIT 许可仅覆盖 `src/` 与 `scripts/` 中的代码。角色形象、图片、视频和语音（GPT-SoVITS 零样本克隆生成）不在 MIT 授权范围内，相关权利归原权利人所有；仅供个人非商业使用，请勿用于商业用途或冒充他人声音。
-- 本项目为粉丝作品，与 Grok Bot 官方无关。
-
-## 📄 许可
-
-代码：[MIT](LICENSE)。更新记录见 [CHANGELOG.md](CHANGELOG.md)。
+程序代码使用 [MIT](LICENSE)，仅覆盖 `src/` 与 `scripts/`。**MIT 不覆盖角色形象、图片、视频和语音**，相关权利归原权利人所有；仅供个人非商业使用，请勿用于商业用途或冒充他人声音。本项目为非官方粉丝作品，与 Grok Bot 官方无关。
