@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "project": "grokbot-splash-launcher",
+  "version": "1.0.0",
+  "platform": "windows",
+  "repository": "BAILEXIANJUN/grokbot-splash-launcher",
+  "releaseTag": "v1.0.0",
+  "assets": {
+    "portable": { "file": "GrokBotSplash-v1.0.0-portable.zip", "url": "https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/GrokBotSplash-v1.0.0-portable.zip", "sha256": "d41d7899a0da56a820ca18477223121306b91efff3afb9bb4bd4b2a45218a142" },
+    "preview": { "file": "grokbot-splash-preview.mp4", "url": "https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/grokbot-splash-preview.mp4", "sha256": "905a33bac820e8cfbf3918ac367547f592fce338dcea37ac82930771da298dc9" },
+    "checksums": { "file": "SHA256SUMS.txt", "url": "https://github.com/BAILEXIANJUN/grokbot-splash-launcher/releases/download/v1.0.0/SHA256SUMS.txt" }
+  },
+  "defaultInstallDir": "%LOCALAPPDATA%\\GrokBotSplash",
+  "shortcutName": "Grok Bot（启动动画）",
+  "agentGuide": "AGENTS.md",
+  "automaticExecution": false,
+  "publicationStatus": "release-prepared"
+}
